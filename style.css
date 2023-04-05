@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.left-side{
+    width: 500px;
+    background-image: url("./images/photo-1678968405583-fcdfa7003f8f.avif");
+    background-position: center;
+}
+
+right-side{
+    padding: 30px;
+}
+
+.top, bottom{
+    padding: 30px;
+    background-color: #af9e9e97;
+}
+
+.middle{
+    padding: 30px;
+    background-color: #fff;
+}
+
+form{
+    display: flex;
+    gap: 50px;
+}
+
