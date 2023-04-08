@@ -3,8 +3,12 @@
     margin: 0;
 }
 
-.logo{
-    font-family: 'Inter', sans-serif;
+@font-face {
+    font-family: 'norsebold';
+    src: url('./webfontkit-20230408-140016/norsebold-webfont.woff') format('woff2'),
+         url('./webfontkit-20230408-140016/norsebold-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -16,20 +20,62 @@ body{
     width: 500px;
     background-image: url("./images/photo-1678968405583-fcdfa7003f8f.avif");
     background-position: center;
+    color: white;
+    position: relative;
 }
 
-right-side{
-    padding: 30px;
+.logo{
+    position: absolute;
+    font-family: 'norsebold','Inter', sans-serif;
+    font-size: 400%;
+    display: flex;
+    top: 30%;
+    gap: 10px;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
 }
 
-.top, bottom{
+.logo-text {
+    align-self: center;
+    font-size: 100%;
+}
+
+.photo-by{
+    position: absolute;
+    bottom: 1rem;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.top, 
+.bottom{
+    flex: 1;
     padding: 30px;
     background-color: #af9e9e97;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    padding-bottom: 40px;
 }
 
 .middle{
     padding: 30px;
     background-color: #fff;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 5px -5px gray, 0 -5px 5px -5px gray;
+    color: rgb(49, 43, 43);
 }
 
 form{
@@ -37,3 +83,49 @@ form{
     gap: 50px;
 }
 
+legend {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.left-form,
+.right-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+button{
+    padding: 10px 30px;
+    background: #358280;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+input {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+a {
+    text-decoration: none;
+    color: #175452;
+    font-weight: bold;
+}
