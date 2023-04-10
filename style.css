@@ -127,6 +127,7 @@ input {
     border: 2px solid;
     border-radius: 5px;
     padding: 3px;
+    border-color: black;
 }
 
 input:invalid {
@@ -137,8 +138,15 @@ input:valid {
     border-color: green;
 }
 
+input:focus {
+    background-color: lightblue;
+    box-shadow: 0 10px 5px -5px gray, 0 -5px 5px -5px gray;
+}
+
+
 .bottom a {
     text-decoration: none;
     color: #175452;
     font-weight: bold;
 }
+
